@@ -58,7 +58,7 @@ python process_all.py
 docker build --platform linux/amd64 -t challenge1b:latest .
 
 # Run the solution for a single collection
-docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none challenge1b:latest "challenge1b_input.json" "challenge1b_output.json"
+docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output --network none challenge1b:latest "input/Collection_1/challenge1b_input.json" "collection1_docker.json"
 ```
 
 #### All Collections at Once:
